@@ -1,14 +1,19 @@
 {
   "name": "Logo By Suki",
-  "short_name": "LogoSuki",
+  "short_name": "logobysuki",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#1a1a1a",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/USERNAME/REPO/main/images/icon.png",
+      "src": "./192x192.png",
       "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
