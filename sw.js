@@ -1,4 +1,4 @@
-const CACHE_NAME = 'logo-suki-cache-v10';
+const CACHE_NAME = 'logo-suki-cache-v11';
 const urlsToCache = [
     './',
     './index.html',
