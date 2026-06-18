@@ -1,4 +1,4 @@
-const CACHE_NAME = 'logo-suki-cache-v4'; // Ganti angkanya (misal v5) kalo lu ada update file di GitHub
+const CACHE_NAME = 'logo-suki-cache-v5';
 const urlsToCache = [
     './',
     './index.html',
@@ -31,7 +31,7 @@ self.addEventListener('activate', event => {
         caches.keys().then(cacheNames => {
             return Promise.all(
                 cacheNames.map(cacheName => {
-                    // Hapus cache versi lama biar memori ga penuh
+                    
                     if (cacheName !== CACHE_NAME) {
                         return caches.delete(cacheName);
                     }
