@@ -1,4 +1,4 @@
-const CACHE_NAME = 'logo-suki-cache-v6';
+const CACHE_NAME = 'logo-suki-cache-v7';
 const urlsToCache = [
     './',
     './index.html',
@@ -18,7 +18,7 @@ const urlsToCache = [
 ];
 
 self.addEventListener('install', event => {
-    self.skipWaiting(); // Langsung aktifkan versi baru tanpa nunggu browser ditutup
+    self.skipWaiting();
     event.waitUntil(
         caches.open(CACHE_NAME).then(cache => {
             return cache.addAll(urlsToCache);
